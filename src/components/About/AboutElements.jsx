@@ -30,6 +30,7 @@ export const AboutItem = styled.div`
     width: 400px;
     height: 600px;
     margin: 1vh 1vw;
+    padding : 0 10px;
     /* background-color: red; */
 `
 
@@ -40,8 +41,8 @@ export const ImageItem = styled.img`
 `
 
 export const AboutItemRight = styled.div`
-    width: 100%;
-    height: 90%;
+    /* width: 100%;
+    height: 90%; */
     /* background-color: blue; */
 `
 
@@ -52,4 +53,5 @@ export const AboutP = styled.p`
     color: ${({theme}) => theme.suvaGrey};
     line-height: 1.6;
     margin-top: 10px;
+    text-align: justify;
 `
