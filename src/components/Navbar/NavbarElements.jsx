@@ -12,7 +12,7 @@ export const NavLink = styled(Link)`
     align-self: center;
     color: ${props => props.theme.white};
     font-family: 'Viga', sans-serif;
-    font-size: 2rem;
+    font-size: 1.8rem;
     font-weight: 700;
     padding-left: 2vw;
     text-decoration: none;

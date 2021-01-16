@@ -3,6 +3,7 @@ import { BrowserRouter } from 'react-router-dom'
 import Hero from './components/Hero';
 import Services from './components/Services'
 import About from './components/About'
+import Contact from './components/Contact'
 import Footer from './components/Footer'
 
 function App() {
@@ -17,9 +18,10 @@ function App() {
   return (
     <BrowserRouter>
       <GlobalStyle/>
-      <Hero  moveTo={() => scrollTo(1)}/>
+      <Hero/>
       <About/>
-      <Services heading='SERVICES' moveTo={() => scrollTo(2)}/>
+      <Services heading='SERVICES'/>
+      <Contact/>
       <Footer/>
     </BrowserRouter>
   );

@@ -10,7 +10,7 @@ export const ContactMeButton = styled.button`
     font-size: 1.1rem;
     font-weight: 400;
     transition: background-color .4s;
-
+    
     &:hover{
         background-color: rgb(85, 123, 255);
     }

@@ -10,11 +10,11 @@ const Navbar = () => {
             <NavItems>
                 <NavItem to='/'>About</NavItem>
                 <NavItem to='/'>Contact</NavItem>
-                <NavLanguageContainer>
+                {/* <NavLanguageContainer>
                     <NavItemLanguage left>EN</NavItemLanguage>
                     <NavItemLanguage>|</NavItemLanguage>
                     <NavItemLanguage right>ID</NavItemLanguage>
-                </NavLanguageContainer>
+                </NavLanguageContainer> */}
             </NavItems>
         </NavbarContainer>
     )

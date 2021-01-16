@@ -2,7 +2,7 @@ import styled, { css } from 'styled-components'
 
 export const ServicesContainer = styled.div`
     height: 100vh;
-    background: ${({theme}) => theme.solitude};
+    background: linear-gradient(${({theme}) => theme.solitude}, ${({theme}) => theme.white});
     text-align: center;
     padding-top: 2vh;
 
