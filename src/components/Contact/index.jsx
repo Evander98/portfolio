@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { ContactContainer, ContactWrapper, Title, ContactItem, ItemWrapper, ContactInput, FormItem, FormItemWrapper, NameWrapper, NameInput, FormNameWrapper, Message } from './ContactElements'
+import { ContactContainer, ContactWrapper, Title, ContactItem, ItemWrapper, ContactInput, FormItem, FormItemWrapper, NameWrapper, NameInput, FormNameWrapper, Message, ContactLink } from './ContactElements'
 import { FaMapMarkerAlt, FaPhone } from 'react-icons/fa'
 import { MdEmail } from 'react-icons/md'
 import { ContactMeButton } from '../../config/buttons'
@@ -22,7 +22,11 @@ const Contact = () => {
             message
         }
         if(fName=='' || lName=='' || email=='' || subject=='' || message==''){
-            alert('Fill all the fields!')
+            Swal.fire(
+                'There is an empty field!',
+                'Please fill all the fields!',
+                'error'
+            )
         } else{
             Axios.post(urlAPI + '/mail/send-mail', data)
             .then((res) => {
@@ -48,7 +52,7 @@ const Contact = () => {
         }
     }
     return (
-        <ContactContainer>
+        <ContactContainer id='contact'>
             <Title>
                 Contact Me
             </Title>
@@ -66,7 +70,9 @@ const Contact = () => {
                         <FaPhone/>
                     </ContactItem>
                     <ContactItem>
-                        +62 822 9330 1798
+                        <ContactLink href="https://wa.me/+6281543130252">
+                            +62 815 4313 0252
+                        </ContactLink>
                     </ContactItem>
                 </ItemWrapper>
                 <ItemWrapper>

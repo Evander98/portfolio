@@ -6,7 +6,11 @@ export const ServicesContainer = styled.div`
     text-align: center;
     padding-top: 2vh;
 
-    @media screen and (max-width: 1123px){
+    @media screen and (max-width: 1146px){
+        height: 100%;
+    }
+
+    @media screen and (max-height: 620px){
         height: 100%;
     }
 `
@@ -31,12 +35,11 @@ export const ServiceContent = styled.div`
 `
 
 export const ServiceItem = styled.div`
-    /* background: red; */
     border: 1px solid ${({theme}) => theme.suvaGrey};
     border-radius: 10px;
     width: 350px;
     height: 306px;
-    margin: 1vh 1vw;
+    margin: 1vh 15px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -45,14 +48,11 @@ export const ServiceItem = styled.div`
 export const LogoItem = styled.img`
     width: 100px;
     height: 100px;
-    /* background-color: pink; */
     padding-top: 6vh;
 `
 
 export const ServiceP = styled.p`
-    /* background-color: green; */
     color: ${props => props.theme.suvaGrey};
-    /* text-align: left; */
     padding-top: 2vh;
     width: 80%;
 

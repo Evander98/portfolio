@@ -1,14 +1,10 @@
-import styled, { css } from 'styled-components'
+import styled from 'styled-components'
 
 export const ContactContainer = styled.div`
     height: 100%;
     background: ${({theme}) => theme.solitude};
     text-align: center;
     padding: 10px;
-
-    /* @media screen and (max-height: 721px){
-        height: 100%;
-    } */
 `
 
 export const Title = styled.h1`
@@ -22,7 +18,6 @@ export const ContactWrapper = styled.div`
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    /* background-color: red; */
 
     &:nth-child(odd){
         margin-top: 20px;
@@ -36,7 +31,6 @@ export const ContactWrapper = styled.div`
 `
 
 export const ItemWrapper = styled.div`
-    /* background-color: blue; */
     @media screen and (min-width: 430px){
         margin: 10px;
     }
@@ -46,18 +40,24 @@ export const ContactItem = styled.p`
     color: ${({theme}) => theme.summerSky};
     padding: 5px;
     width: 300px;
-    /* background-color: red; */
+`
+
+export const ContactLink = styled.a`
+    color: ${({theme}) => theme.summerSky};
+    text-decoration: none;
+
+    &:hover{
+        cursor: pointer;
+    }
 `
 
 export const FormItemWrapper = styled.div`
-    /* background-color: red; */
     @media screen and (min-width: 430px){
         margin: 10px;
     }
 `
 
 export const FormNameWrapper = styled.div`
-    /* background-color: red; */
     @media screen and (min-width: 430px){
         margin: 10px;
     }
@@ -68,7 +68,6 @@ export const FormNameWrapper = styled.div`
 `
 
 export const NameWrapper = styled.div`
-    /* background-color: blue; */
     display: flex;
     flex-direction: column;
 

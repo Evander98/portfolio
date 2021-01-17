@@ -3,11 +3,12 @@ import Navbar from '../Navbar'
 import { ArrowLink, HeroContainer, HeroContent, HeroH1, HeroH2, HeroItems, HeroP } from './HeroElements'
 import { ContactMeButton } from '../../config/buttons'
 import { BsChevronDoubleDown } from 'react-icons/bs'
+import { scroller } from 'react-scroll'
 
 
 const Hero = () => {
     return (
-        <HeroContainer>
+        <HeroContainer id='hero'>
             <Navbar/>
             <HeroContent>
                 <HeroH2>
@@ -27,7 +28,7 @@ const Hero = () => {
                 <HeroP>
                     Need website or mobile app?
                 </HeroP>
-                <ContactMeButton>Contact Me</ContactMeButton>
+                <ContactMeButton onClick={() => scroller.scrollTo('contact', {smooth: true})}>Contact Me</ContactMeButton>
                 <ArrowLink to='about' smooth={true}>
                     <BsChevronDoubleDown/>
                 </ArrowLink>

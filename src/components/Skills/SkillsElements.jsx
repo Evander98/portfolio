@@ -14,7 +14,6 @@ export const ContentWrapper = styled.div`
 export const LogoItem = styled.img`
     height: 130px;
     margin: 20px;
-    /* background-color: red; */
 
     ${props => {
         if(props.height){

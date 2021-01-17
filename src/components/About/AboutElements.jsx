@@ -9,6 +9,10 @@ export const AboutContainer = styled.div`
     @media screen and (min-width: 875px){
         height: 100vh;
     }
+
+    @media screen and (max-height: 620px){
+        height: 100%;
+    }
 `
 
 export const AboutH1 = styled.h1`
@@ -28,11 +32,11 @@ export const AboutItem = styled.div`
     width: 400px;
     margin: 1vh 1vw;
     padding : 0 10px;
-    /* background-color: red; */
 `
 
 export const ImageItem = styled.img`
-    
+    width: 100%;
+    height: 600px;
 `
 
 export const AboutItemRight = styled.div`

@@ -7,14 +7,6 @@ import Contact from './components/Contact'
 import Footer from './components/Footer'
 
 function App() {
-
-  const scrollTo = (times) => {
-    window.scrollTo({
-      top : window.innerHeight * times,
-      behavior: "smooth"
-    })
-  }
-
   return (
     <BrowserRouter>
       <GlobalStyle/>

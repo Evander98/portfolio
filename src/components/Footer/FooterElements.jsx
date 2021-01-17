@@ -8,13 +8,10 @@ export const FooterContainer = styled.div`
 `
 
 export const FooterP = styled.p`
-    /* background-color: red; */
     color: ${props => props.theme.solitude};
-    /* text-align: center; */
 `
 
 export const SocialMediaWrap = styled.div`
-    /* background-color: red; */
     padding: 5px;
 `
 
@@ -24,6 +21,7 @@ export const SocialMedia = styled.a`
     margin: 2.5px;
 
     &:hover{
-        color: ${({theme}) => theme.summerSky}
+        color: ${({theme}) => theme.summerSky};
+        cursor: pointer;
     }
 `

@@ -1,26 +1,13 @@
 import React from 'react'
-import { AboutContainer, AboutContent, AboutH1, AboutItemRight, AboutItem, ImageItem, AboutP, AboutH2, ContentWrapper, LogoItem } from './AboutElements'
+import { AboutContainer, AboutContent, AboutH1, AboutItemRight, AboutItem, ImageItem, AboutP } from './AboutElements'
 import MyImage from '../../images/IMG_5433.JPG'
-import HTML5 from '../../images/html-5.png'
-import CSS3 from '../../images/css.png'
-import Javascript from '../../images/javascript.png'
-import ReactJSLogo from '../../images/reactjs.png'
-import ReactNative from '../../images/react-native.png'
-import ReduxLogo from '../../images/redux.png'
-import StyledCompsLogo from '../../images/styled-components.png'
-import BootstrapLogo from '../../images/bootstrap.png'
-import NodeJSLogo from '../../images/nodejs.png'
-import ExpressJSLogo from '../../images/ExpressJS.png'
-import MysqlLogo from '../../images/mysql.png'
-import MongoDBLogo from '../../images/mongodb.png'
-import FirebaseLogo from '../../images/firebase.png'
 
 const About = () => {
     return (
         <AboutContainer id='about'>
             <AboutContent>
                 <AboutItem>
-                    <ImageItem width='100%' height='600px' src={MyImage}/>
+                    <ImageItem src={MyImage}/>
                 </AboutItem>
                 <AboutItem>
                     <AboutH1>ABOUT ME</AboutH1>

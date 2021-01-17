@@ -1,12 +1,13 @@
 import React from 'react'
 import { ServicesContainer, ServicesH1, ServiceContent, ServiceItem, LogoItem, ServiceH3, ServiceP, Hr } from './ServicesElements'
 import { ContactMeButton } from '../../config/buttons'
+import { scroller } from 'react-scroll'
 import webDevIcon from '../../images/laptop.svg'
 import webDesignIcon from '../../images/computer.svg'
 import webAppIcon from '../../images/mobile-app.svg'
 const Services = ({heading}) => {
     return (
-        <ServicesContainer>
+        <ServicesContainer id='services'>
             <ServicesH1>
                 {heading}
             </ServicesH1>
@@ -29,7 +30,7 @@ const Services = ({heading}) => {
             </ServiceContent>
             <Hr/>
             <ServiceP auto>Would you like to know more or just discuss something?</ServiceP>
-            <ContactMeButton margin='20px'>Contact me</ContactMeButton>
+            <ContactMeButton margin='20px' onClick={() => scroller.scrollTo('contact', {smooth: true})}>Contact me</ContactMeButton>
         </ServicesContainer>
     )
 }
