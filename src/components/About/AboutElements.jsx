@@ -26,6 +26,7 @@ export const AboutContent = styled.div`
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    align-items: center;
 `
 
 export const AboutItem = styled.div`
@@ -35,8 +36,9 @@ export const AboutItem = styled.div`
 `
 
 export const ImageItem = styled.img`
-    width: 100%;
-    height: 600px;
+    width: 80%;
+    /* height: 600px; */
+    clip-path: circle();
 `
 
 export const AboutItemRight = styled.div`

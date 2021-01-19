@@ -45,15 +45,15 @@ export const Items = styled.ul`
         position: fixed;
         right: ${({isOpen}) => (isOpen ? "0" : "-1000px")};
         top: 0;
-        width: 250px;
+        width: 40%;
         height: calc(100vh + 80px);
         flex-direction: column;
         align-items: center;
         justify-content: space-evenly;
         background-color: ${props => props.theme.nightRider};
         transition: all 1s;
+        z-index: 98;
     }
-    
 `
 
 export const ListItem = styled.li`
@@ -63,7 +63,6 @@ export const ListItem = styled.li`
 export const Item = styled(Link)`
     color: rgba(255, 255, 255, .7);
     text-decoration: none;
-    font-size: 0.8em;
 
     &:hover{
         color: ${props => props.theme.white};
@@ -82,6 +81,7 @@ export const Hamburger = styled.div`
 
     @media screen and (max-width: 576px){
         display: flex;
+        z-index: 99;
         ${({isOpen}) => {
             if(isOpen){
                 return css`

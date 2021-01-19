@@ -1,6 +1,6 @@
 import React from 'react'
 import { AboutContainer, AboutContent, AboutH1, AboutItemRight, AboutItem, ImageItem, AboutP } from './AboutElements'
-import MyImage from '../../images/IMG_5433.JPG'
+import MyImage from '../../images/My pic.jpg'
 
 const About = () => {
     return (
