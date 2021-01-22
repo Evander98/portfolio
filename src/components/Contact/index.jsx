@@ -21,7 +21,7 @@ const Contact = () => {
             subject,
             message
         }
-        if(fName=='' || lName=='' || email=='' || subject=='' || message==''){
+        if(fName==='' || lName==='' || email==='' || subject==='' || message===''){
             Swal.fire(
                 'There is an empty field!',
                 'Please fill all the fields!',
